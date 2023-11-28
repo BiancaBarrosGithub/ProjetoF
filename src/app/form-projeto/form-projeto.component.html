@@ -1,0 +1,49 @@
+<div class="card p-3 mt-3">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do projeto</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Nome do proejto" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do projeto!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="cpf" class="form-label">Descricao</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="descricao" formControlName="descricao">
+            <div class="invalid-feedback">
+                Informe a descricao!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="endereco" class="form-label">qtdeParticipantes</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="qtdeParticipantes" formControlName="qtdeParticipantes">
+            <div class="invalid-feedback">
+                Informe a quantidade de Participantes!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="rg" class="form-label">responsavel </label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="responsavel" formControlName="responsavel">
+            <div class="invalid-feedback">
+                Informe o responsavel !!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="email" class="form-label">custo</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="custo" formControlName="emaik">
+            <div class="invalid-feedback">
+                Informe o custo!!!
+            </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-primary me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
